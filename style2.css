@@ -442,6 +442,8 @@ footer .footer-col li {
     padding: 15px 0;
     cursor: pointer;
     color: #bfbfbf;
+    
+
 }
 
 footer .footer-col li a {
@@ -495,10 +497,11 @@ footer .copyright {
 
 footer .copyright p {
     font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 footer .copyright .social {
-    margin-top: 0px;
+    margin-top: 5px;
 }
 
 footer .copyright .social i {
@@ -688,4 +691,4 @@ footer .copyright .social .fa-linkedin-in:hover {
     display:flex;
     align-items: center;
 
-}
+} 
