@@ -1,0 +1,346 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Newsreader&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&family=Newsreader&display=swap");
+/* Global tags */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #545454;
+  letter-spacing: 1px;
+}
+
+span {
+  font-size: 0.9rem;
+  color: #545454;
+}
+
+h6 {
+  font-size: 1.1rem;
+  color: #545454;
+}
+/* -------------------------------Navigation for indexpage */
+.navbar {
+  width: 100%;
+  display: flex;
+  background-color: #64366d;
+  height: 80px;
+  gap: 5px;
+  justify-content: space-around;
+  font-size: 20px;
+  position: fixed;
+  z-index: 2;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 5px #000;
+  border-bottom: 3px solid #000;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.fst_navDiv {
+  width: 27%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fst_navDiv a {
+  font-size: 30px;
+  margin-right: 10px;
+  color: bisque;
+  text-decoration: none;
+}
+
+.fst_navDiv span {
+  font-size: 14px;
+  color: whitesmoke;
+}
+
+.Snd_navDiv {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  padding-right: 21px;
+  position: relative;
+}
+
+.Snd_navDiv ul li {
+  text-decoration: none;
+  display: inline;
+}
+
+.indexSecondNav {
+  justify-content: flex-end;
+}
+
+.logout_li {
+  position: absolute;
+  right: 58px;
+}
+
+.secdiv {
+  display: flex;
+  justify-content: flex-end;
+}
+.a_tag_elm {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.a_tag_elm:hover {
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #0e3347;
+  cursor: pointer;
+}
+/* ------------------------------------Index page Login form --------------------------------- */
+.logindiv {
+  visibility: hidden;
+  position: absolute;
+  top: 21%;
+  left: 555px;
+  box-sizing: border-box;
+  width: 400px;
+  height: 450px;
+  background: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  visibility: hidden;
+  display: flex;
+  box-shadow: 0px 0px 6px 6px grey;
+  flex-direction: column;
+  align-items: center;
+}
+.logindiv2 {
+  text-align: center;
+  height: 60%;
+  width: 80%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+form>input {
+  margin-top: 10px;
+  box-sizing: border-box;
+  border: solid 1px black;
+  border-radius: 5px;
+  font-size: 14px;
+  height: 30px;
+}
+
+#login_form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+}
+
+#login-form-submit {
+  color: #fff;
+  background-color: cornflowerblue;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 60%;
+  height: 30px;
+  text-decoration: none;
+  border: 1px solid black;
+  margin: 10px auto;
+}
+
+#login-form-submit:hover {
+  background-color: darkblue;
+}
+
+.CloseLoginDivBttn {
+  position: absolute;
+  top: -9px;
+  right: 0px;
+  font-size: 35px;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+/* ------------------------------------Index page SignUp Form--------------------------------- */
+#signUpForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#signUpDiv {
+  width: 400px;
+  height: 450px;
+  background: white;
+  position: relative;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  box-shadow: 0px 0px 6px 6px grey;
+}
+
+.inputvalitation {
+  border-radius: 5px;
+  width: 80%;
+  height: 28px;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+#signUpDiv h1 {
+  display: flex;
+  justify-content: center;
+}
+
+#signUpForm input:focus-visible {
+  outline: none;
+}
+
+#switchToLogin {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+#SwitchtoSignUp {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#closeForm {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 800;
+  width: fit-content;
+  margin: 0px;
+  height: auto;
+  transform: rotate(45deg);
+}
+
+#signUpButton {
+  color: #fff;
+  background-color: cornflowerblue;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 80%;
+  height: 30px;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+#signUpButton:hover {
+  background-color: darkblue;
+}
+
+.switchText {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: flex-end;
+}
+
+.signDiv {
+  visibility: hidden;
+  height: 350px;
+  width: 327px;
+  position: absolute;
+  top: 140px;
+  left: 551px;
+  margin-top: 10px;
+  border: solid 1px black;
+  border-radius: 10px;
+  background-color: black;
+}
+
+.blue_color_div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #225470;
+  opacity: 0.8;
+}
+
+.txt_div {
+  position: absolute;
+  z-index: 1;
+  top: 45%;
+  left: 38%;
+  text-align: center;
+  color: #f34343;
+  gap: 10px;
+  height: 120px;
+}
+
+.txt_div h1 {
+  font-size: 40px;
+}
+
+.txt_div small {
+  font-size: 20px;
+}
+
+.platformdetails {
+  position: absolute;
+ 
+  bottom: 30%;
+  left: 25%;
+  text-align: center;
+  color: #050505;
+  height: 50px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.video_nd_txt_div {
+  position: relative;
+  height: 100%;
+  z-index: -1;
+}
+.video_div {
+  position: relative;
+  opacity: 0.5;
+}
+
+.Bg_video {
+  height: 100%;
+  width: 100%;
+}
+
+.blue_color_div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #225470;
+  opacity: 0.8;
+}
